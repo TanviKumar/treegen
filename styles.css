@@ -1,9 +1,9 @@
-body{
+body {
 	padding: 0;
 	margin:0;
 	font-size: 20px;
 }
-button{
+button {
 	padding: 10px 25px 8px;
     color: #fff;
     background-color: #0067ab;
@@ -15,29 +15,30 @@ button{
     cursor:pointer;
     margin-left: 5px;
 }
-button:hover{
+button:hover {
 	background-color: #024978;
 }
-canvas{
+canvas {
 	position: relative;
-	float: left;
+	float: right;
+	margin-right: 10px;
 }
-#trials{
+#trials {
 	list-style: none;
 	background-color: lightblue;
 	text-align: center;
 	font-size: 20px;
 }
 
-.container{
+.container {
 	background-color: lightblue;
 	text-align: center;
 }
-li{
+li {
 	display: inline;
 	margin-left: -3px;
 }
-input[type='text']{
+input[type="text"], .inputValue{
     width: 200px;
     border-radius: 2px;
     border: 1px solid #CCC;
@@ -45,4 +46,31 @@ input[type='text']{
     color: #333;
     font-size: 14px;
     margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.width {
+	width: 70px;
+	border-radius: 2px;
+	border: 1px solid #CCC;
+    padding: 10px;
+    color: #333;
+    font-size: 14px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+#instructions {
+	width: 700px;
+	height: 700px;
+	margin-left: 10px;
+	float: left;
+	background-color: black;
+
+}
+
+p {
+	color: white;
+	padding: 10px;
+	font-size: 23px;
 }
