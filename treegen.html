@@ -1,5 +1,6 @@
 <html>
 <head>
+	
 	<title>Tree Generator</title>
 	 <script language="javascript" type="text/javascript" src="p5/p5.js"></script>
 	  <script language="javascript" src="p5/addons/p5.dom.js"></script>
@@ -10,16 +11,62 @@
 		<h3>TREE GENERATOR USING L SYSTEMS</h3>
 	</div>
 	<div class="container">
-		Rule : F = <input type="text" id="input" placeholder="Primary branch design">
-		Length : <input type="text" id="length" value=75>
+		Rule : F = <input type="text" id="input" placeholder="Primary branch design" class="inputValue">
+
+		Length : <input type="number" id="length" value=75 class="inputValue">
+
+		Angle :  <input type="number" id="angle" value=25 class="inputValue">
+
+		Background Color : <input type="color" id="bgColorSet" value="#000000">
+
+		<div class="trippy">
+	        <input type="checkbox" value="None" id="trippyColor" name="check" />
+	        <label for="trippyColor">Trippy Color</label>
+	    </div>
+
+		Leaves Color:        <input type="color" id="colorSet1" value="#ffffff">
+		Width : <input type="number" class = "width" id="widthSet1" value=1 min=1 max=20>
+
+		Twigs Color:         <input type="color" id="colorSet2" value="#ffffff">
+		Width : <input type="number" class = "width" id="widthSet2" value=3 min=1 max=20>
+
+		Medium Branch Color: <input type="color" id="colorSet3" value="#ffffff">
+		Width : <input type="number" class = "width" id="widthSet3" value=5 min=1 max=20>
+
+		Large Branch:        <input type="color" id="colorSet4" value="#ffffff">
+		Width : <input type="number" class = "width" id="widthSet4" value=7 min=1 max=20>
+
+		Trunk Color:         <input type="color" id="colorSet5" value="#ffffff">
+		Width : <input type="number" class = "width" id="widthSet5" value=9 min=1 max=20>
+
 		<button id="primaryTree">Generate Primary Tree</button>
-		<button id="genButton">Generate Whole Tree</button>
 		<button id="iterate">Another iteration</button>
+		<button id="genButton3">Generate Three Iterations</button>
+		<button id="genButton4">Generate Four Iterations</button>
+		<button id="reGen">ReGen</button>
 		<button id="saveButton">Save Rule</button>
 	</div>
+
 	<ul id="trials">
 		Other Options :
 	</ul>
+
+	<div id="instructions">
+		<p> Create trees by typing in your own rule. <br>You can change the background of your canvas, the color of the branches of your tree and remember to try out the 'trippy color' option for some exciting results. If you're stuck, check out the other options and see how the primary tree looks for each one to get an idea of things work!</p>
+
+		<p> Letters in the Alphabet and their definitions : </p>
+
+		<p> 
+		F = draws a line from current orientation of the desired length <br>
+		[ = remembers your current orientation <br>
+		] = goes back to saved orientation <br>
+		+ = changes angle by desired value in clockwise direction <br>
+		- = changes angle by desired value in anti-clockwise direction </p>
+
+		<p> Use ReGen button to generate the same tree if you have made changes to length, angle, colors and widths.</p>
+
+		<p> Note : Do not exceed beyond 5 iterations as your browser might hang. A "whole tree" has 4 iterations. </p>
+	</div>
 	<script type="text/javascript" src="script.js"></script>
 
 </body>
