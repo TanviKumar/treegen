@@ -48,8 +48,10 @@ tree.prototype.generate = function() {
 		}
 	};
 	if(check == false || openCount != closeCount){
-		alert("Incorrect Design");
-		this.check = true;
+		if(openCount != 0 || closeCount !=0){
+			alert("Incorrect Design");
+			this.check = true;
+		}
 	}
 	else{
 		this.len *= 0.5; //So the tree becomes denser instead of larger.
