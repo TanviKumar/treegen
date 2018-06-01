@@ -28,4 +28,4 @@
 
     Some sample images :
     
-![tree 1](treegen/images/tree1.jpg)
+![tree 1](images/tree1.jpg)
