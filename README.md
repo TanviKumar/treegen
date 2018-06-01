@@ -29,3 +29,6 @@
     Some sample images :
     
 ![tree 1](images/tree1.jpg)
+![tree 2](images/tree2.jpg)
+![tree 3](images/tree3.jpg)
+![tree 4](images/tree4.jpg)
