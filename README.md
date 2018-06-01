@@ -25,3 +25,7 @@
     Try out the other sample ideas and you can save rules too.
     
     Simply git clone and open treegen.html to try it out.
+
+    Some sample images :
+    
+![tree 1](treegen/images/tree1.jpg)
