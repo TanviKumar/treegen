@@ -166,9 +166,9 @@ function getRandomColor() {
 }
 
 //On clicking on of the trial button, primary tree is generated.
-function addToInput(trialButton) {
+function addToInput(text) {
 	var input =document.getElementById("input");
-	input.value = trialButton.target.value;
+	input.value = text;
 	document.getElementById("primaryTree").click();
 }
 
@@ -179,7 +179,7 @@ function create(text) {
 	newButton.value = text;
 	newButton.innerHTML  = text;
 	newButton.onclick = function(){
-		addToInput(event);
+		addToInput(text);
 	};
 	li.appendChild(newButton);
 	document.getElementById("trials").appendChild(li);
